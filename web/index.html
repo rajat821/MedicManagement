@@ -1,15 +1,98 @@
-<!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
--->
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+
+<head>
+    <title>User Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./welcomepage.css"/> </head>
+
+<body>
+    <div class="center_div">
+
+        <div class="inside_div">
+            <img src="./logo1.png" alt="logoimg">
+
+            <!-- // header -->
+            <!-- <h3>Care & Cure Hospital</h3> -->
+
+            <h4 class="slogan">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde aperiam amet neque!
+                Veritatis, accusantium fugiat. Non hic nisi perspiciatis ratione!</h4>
+
+
+            <div class="inside_div_form">
+                <!-- <form action=""><input class="login_register_button pull-left" type="submit" value="LOGIN"></form> -->
+                <button onclick="document.getElementById('id01').style.display='block'"
+                    class="login_register_button">Login</button>
+                <button onclick="document.getElementById('id02').style.display='block'"
+                    class="login_register_button">Register (New User)</button>
+                <!-- <form action=""><input class="login_register_button pull-right" type="submit" value="REGISTER"></form> -->
+            </div>
+        </div>
+
+    </div>
+
+    <div id="id01" class="modal">
+
+        <div class="main animate">
+
+            <div class="popup">
+                <h2 class="login_h2">Login as</h2>
+                <form action="../log-sign-page/Login/UserLog.html"><input class="entity" type="submit" value="Patient ">
+                </form>
+                <form action="../log-sign-page/Login/docLog.html"><input class="entity" type="submit" value="Doctor ">
+                </form>
+                <form action="../log-sign-page/Login/labLog.html"><input class="entity" type="submit"
+                        value="Laboratorian ">
+                </form>
+                <form action="../log-sign-page/Login/pharmaLog.html"><input class="entity" type="submit"
+                        value="Pharmacist ">
+                </form>
+                <form action="../log-sign-page/Login/accLog.html"><input class="entity" type="submit"
+                        value="Accountent ">
+                </form>
+                <form action="../log-sign-page/Login/adminLog.html"><input class="entity" type="submit" value="Admin ">
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="id02" class="modal">
+
+        <div class="main animate">
+
+            <div class="popup">
+                <h2 class="signin_h2">Register as</h2>
+
+                <form action="../log-sign-page/Signin/docReg.html"><input class="entity" type="submit" value="Doctor">
+                </form>
+                <form action="../log-sign-page/Signin/UserReg.html"><input class="entity" type="submit" value="Patient">
+                </form>
+                <form action="../log-sign-page/Signin/docReg.html"><input class="entity" type="submit"
+                        value="Laboratorian">
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Get the modal
+        var modal1 = document.getElementById('id01');
+        var modal2 = document.getElementById('id02');
+        // When the user clicks anywhere outside of the modal, close it
+
+        window.onclick = function (event) {
+            if (event.target === modal1) {
+                modal1.style.display = "none";
+            }
+            if (event.target === modal2) {
+                modal2.style.display = "none";
+            }
+        }
+
+
+    </script>
+</body>
+
 </html>
