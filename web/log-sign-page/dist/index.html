@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CodePen - Sign up / Login Form</title>
+	<link rel="stylesheet" href="./style.css">
+
+	<link rel="stylesheet" href="loading.css">
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="main">
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+		<div class="login">
+			<form>
+				<label for="chk" aria-hidden="true">Login</label>
+				<input type="text" name="txt" placeholder="User name" required="">
+				<input type="email" name="email" placeholder="Email" required="">
+				<input type="password" name="pswd" placeholder="Password" required="">
+				<button>Login</button>
+			</form>
+		</div>
+
+		<div class="newuser">
+			<form>
+				<label for="chk" aria-hidden="true">New User</label>
+				<!-- <button><a href="docReg.html">Doctor's Registeration</a></button>
+				<button><a href="UserReg.html">Patient Registeration</a></button>
+				<button><a href="LabReg.html">Laboratorian Registeration</a></button> -->
+			</form>
+			<form action="../Signin/docReg.html"><input class="shibu" type="submit" value="Doctor Registeration"></form>
+			<form action="../Signin/UserReg.html"><input class="shibu" type="submit" value="Patient Registeration">
+			</form>
+			<form action="../Signin/docReg.html"><input class="shibu" type="submit" value="Laboratorian Registeration">
+			</form>
+		</div>
+
+	</div>
+</body>
+<!-- 
+<body>
+	<div class="loader">
+		<div class="ring">loading...</div>
+	</div>
+	<!-- partial:index.partial.html 
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+		<title>Slide Navbar</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="loading.css">
+		<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div class="main">
+			<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<!-- <input type="text" name="txt" placeholder="User name" required=""> 
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Login</button>
+				</form>
+			</div>
+
+			<div class="newuser">
+				<form>
+					<label for="chk" aria-hidden="true">New User</label>
+					<!-- <button><a href="docReg.html">Doctor's Registeration</a></button>
+					<button><a href="UserReg.html">Patient Registeration</a></button>
+					<button><a href="LabReg.html">Laboratorian Registeration</a></button> 
+				</form>
+				<form action="docReg.html"><input class="shibu" type="submit" value="Doctor Registeration"></form>
+				<form action="UserReg.html"><input class="shibu" type="submit" value="Patient Registeration"></form>
+				<form action="LabReg.html"><input class="shibu" type="submit" value="Laboratorian Registeration"></form>
+			</div>
+
+		</div>
+	</body>
+
+	</html>
+	 partial
+
+</body> -->
+
+</html>

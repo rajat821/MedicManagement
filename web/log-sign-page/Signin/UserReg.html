@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Slide Navbar</title>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style4sign.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="register_heading">
+        <h1>Welcome to care & cure</h1>
+        <br />
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate architecto dolor consequuntur ea magni
+            voluptate aliquam tempore excepturi laboriosam error harum, iste odit quam corrupti similique quod vero
+            offis nisi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, ipsam consequatur laborum
+            laudantium tempore voluptas rerum quam nesciunt nemo debitis culpa, nihil alias! Dolores adipisci ullam
+            optio deleniti quam veniam dolorem quis fuga expedita accusamus ut rem, suscipit, quidem distinctio
+            quisquam, error blanditiis! At quos, odio a nostrum aliquid quis animi ipsam nulla ad facere esse molestiae,
+            ut, dolore consequatur possimus unde odit error rerum temporibus magnam laborum amet? Provident dignissimos
+            a molestiae! Maxime, minima aspernatur quis enim, totam cumque possimus laboriosam quibusdam commodi
+            officiis maiores. Ipsam, molestias id? Nam quasi inventore temporibus doloribus exercitationem quo corrupti
+            sapiente, magni cumque!</p>
+
+    </div>
+
+
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="signup">
+            <form>
+                <label for="chk" aria-hidden="true">Patient Registeration</label>
+                <input type="text" name="txt" placeholder="User name" required="">
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="Password" required="">
+                <input type="number" name="mobile" placeholder="Phone no." required="">
+                <input id="date" name="date" type="date" value="yyyy-mm-dd" />
+                <button>Sign up</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        $(window).load(function () {
+            $('#loading').fadeOut("slow");
+        });
+    </script>
+</body>
+
+</html>
